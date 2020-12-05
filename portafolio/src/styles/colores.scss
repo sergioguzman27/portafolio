@@ -1,0 +1,49 @@
+// Variables
+
+$negro: #070707;
+$azul: #4895EF;
+$azul-claro: #4CC9F0;
+$blanco: #FFFFFF;
+$rosa: #F72585;
+
+// Colores de texto
+.negro {
+    color: $negro !important;
+}
+
+.azul {
+    color: $azul !important;
+}
+
+.azul-claro {
+    color: $azul-claro !important;
+}
+
+.blanco {
+    color: $blanco !important;
+}
+
+.rosa {
+    color: $rosa !important;
+}
+
+// Backgrounds
+.bg-negro {
+    background-color: $negro !important;
+}
+
+.bg-azul {
+    background-color: $azul !important;
+}
+
+.bg-azul-claro {
+    background-color: $azul-claro !important;
+}
+
+.bg-blanco {
+    background-color: $blanco !important;
+}
+
+.bg-rosa {
+    background-color: $rosa !important;
+}

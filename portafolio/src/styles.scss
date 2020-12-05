@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+// Importaciones
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+@import './styles/colores.scss';
+@import './styles/texto.scss';
+
+
+:root, html, body, * {
+    font-family: 'Anonymous Pro';
+    color: $blanco;
+}
+
+body {
+    height: 100%;
+    background-color: $negro !important;
+}
+
+.container-main {
+    height: 100vh;
+}
+
+.fas {
+    font-size: 24pt !important;
+}
