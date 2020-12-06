@@ -1,0 +1,83 @@
+@import '../../../styles/colores.scss';
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    height: 90vh;
+    padding: 1.5rem 0.2rem 0rem 5rem;
+    // background-color: brown;
+}
+
+.home-portada {
+    flex: 1;
+    height: 100%;
+    background-color: $rosa;
+    // margin-left: 2rem;
+}
+
+.home-portada-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../../../assets/perfil.jpg");
+    background-color: $negro;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-toolbar {
+    display: flex;
+    flex-direction: row;
+    // flex: 1;
+    justify-content: space-between;
+    margin: 2rem 0.5rem;
+}
+
+
+.home-body {
+    flex: 2;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 1rem;
+    
+    .home-body-container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $azul;
+        border-left: none;
+        height: 100%;
+        padding: 1rem 0.5rem;
+    }
+    
+    h2 {
+        padding-left: 0.5rem;
+        margin-right: auto;
+        color: $azul-claro;
+        border-bottom: 2px solid $azul-claro;
+        border-left: 2px solid $azul-claro;
+    }
+}
+
+.icon-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  2.5rem;
+    height: 2.5rem;
+    border: 2px solid $azul;
+    border-radius: 50%;
+    
+    img {
+        // border-radius: 50%;
+        width:  2rem;
+        height: 2rem;
+    }
+}
+

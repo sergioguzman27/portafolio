@@ -1,0 +1,28 @@
+@import './colores.scss';
+
+// Steps
+.steps {
+    height: 100% !important;
+
+    .ant-steps-vertical {
+        height: 100%;
+    }
+}
+.ant-steps-item-title {
+    font-family: 'Anonymous Pro';
+    // font-size: 14pt;
+    color: $blanco !important;
+}
+
+.ant-steps-item-tail {
+    left: 20px !important;
+}
+
+.ant-steps-item-tail::after {
+    width: 2px !important;
+    background-color: $azul !important;
+}
+
+.ant-steps-item-finish {
+
+}
