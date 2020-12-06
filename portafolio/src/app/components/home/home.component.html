@@ -1,1 +1,64 @@
-<p>home works!</p>
+<div class="home-container">
+    <div class="home-portada">
+        <div class="home-portada-container">
+            <h1 class="azul-claro">Sergio<br/>Guzmán</h1>
+            <div class="social-toolbar">
+                <a class="mx-3" href="https://www.facebook.com/sergio.guzman.330/">
+                    <img src="../../../assets/iconos/facebook.png" />
+                </a>
+                <a class="mx-3" href="https://www.instagram.com/sergioguzman27/">
+                    <img src="../../../assets/iconos/instagram.png" />
+                </a>
+                <a class="mx-3">
+                    <img src="../../../assets/iconos/likedin.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-body">
+        <div class="home-body-container">
+            <h2 style="text-transform: uppercase;">Un poco<br/>sobre mi</h2>
+
+            <div class="d-flex flex-row mt-4 h-100">
+                <div class="flex-3">
+                    <p class="descripcion blanco">
+                        Soy un Ingenieró en Informática y Sistemas, recien graduado en epoca de pandemia. Tengo 23 años de edad,
+                        soy originario de Mazatenango, Suchitepéquez aunque por mis estudios y trabajo vivo en Quetzaltenango.
+                        Actualmente me encuentro laborando para la empresa Ciancoders donde tengo el puesto de desarrollador full stack
+                        en el rango de semi senior.
+                    </p>
+                    <p class="descripcion blanco">
+                        Me considero una persona muy análitica y curiosa, por lo mismo es que decidí estudiar y trabajar
+                        en el campo de la informática. Soy una persona con liderazgo, buen trabajo en equipo y dispuesto a aprender más
+                        cosas. Si buscas saber un poco más sobre mi vida personal y laboral te invito a ver las otras secciones de mi portafolio.
+                    </p>
+                </div>
+                <div class="d-flex flex-2 justify-content-center align-items-center pt-5">
+                    <nz-steps class="steps" nzDirection="vertical">
+                        <nz-step zStatus="finish" nzTitle="Guatemala" [nzIcon]="dotPin"></nz-step>
+                        <nz-step zStatus="finish" nzTitle="+502 54639668" [nzIcon]="dorWhats"></nz-step>
+                        <nz-step zStatus="finish" nzTitle="sergiohumberto27@gmail.com" [nzIcon]="dotMail"></nz-step>
+                    </nz-steps>
+
+                    <ng-template #dotPin>
+                        <div class="icon-dot">
+                            <fa-icon class="azul" [icon]="faMapMarkerAlt"></fa-icon>
+                            <!-- <img src="../../../assets/iconos/pin.jpeg" /> -->
+                        </div>
+                    </ng-template>
+                    <ng-template #dorWhats>
+                        <div class="icon-dot">
+                            <fa-icon class="azul" [icon]="faPhoneAlt"></fa-icon>
+                        </div>
+                    </ng-template>
+                    <ng-template #dotMail>
+                        <div class="icon-dot">
+                            <fa-icon class="azul" [icon]="faEnvelope"></fa-icon>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
