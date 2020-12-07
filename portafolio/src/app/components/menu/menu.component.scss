@@ -6,6 +6,62 @@
     bottom: 0;
     flex-direction: row;
     align-items: center;
-    // width: 100%;
+    padding: 0rem 0rem 0rem 5rem;
     height: 10vh;
+}
+
+.btn-menu, .btn-menu:hover, .btn-menu:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    .ng-fa-icon {
+        font-size: 2rem;
+        color: $azul;
+    }
+}
+
+.menu-bar-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.menu-seccion {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .menu-seccion-dot {
+        height: 1rem;
+        width:  1rem;
+        border-radius: 50%;
+        border: 2px solid $azul;
+    }
+
+    .menu-titulo {
+        display: none;
+        transition: all 8s;
+
+    }
+}
+
+.menu-seccion:hover {
+    .menu-seccion-dot {
+        background-color: $azul;
+    }
+    .menu-titulo {
+        display: block;
+        transition: all 8s;
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }

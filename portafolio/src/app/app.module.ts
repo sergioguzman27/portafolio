@@ -16,7 +16,11 @@ import es from '@angular/common/locales/es';
 // Components de Antd
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
-import { NzIconModule } from 'ng-zorro-antd/icon';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 registerLocaleData(es);
 
@@ -25,6 +29,11 @@ registerLocaleData(es);
     AppComponent,
     HomeComponent,
     MenuComponent,
+    ProyectosComponent,
+    ServiciosComponent,
+    HabilidadesComponent,
+    EstudiosComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,6 @@ registerLocaleData(es);
     BrowserAnimationsModule,
     NzStepsModule,
     NzTimelineModule,
-    NzIconModule
   ],
   providers: [{ provide: NZ_I18N, useValue: es_ES }],
   bootstrap: [AppComponent]

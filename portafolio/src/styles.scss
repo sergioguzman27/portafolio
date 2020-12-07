@@ -16,6 +16,8 @@ body {
 }
 
 .container-main {
+    width: auto !important;
+    overflow-x: auto !important;
     height: 100vh;
 }
 

@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faBars  } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -11,10 +11,44 @@ import { faBars  } from '@fortawesome/free-solid-svg-icons';
 export class MenuComponent implements OnInit {
 
   faBars = faBars;
+  @Input() changeSeccion: Function;
+  @Input() activeSeccion;
+
+  secciones: Array<any> = [
+    {
+      id: 1,
+      titulo: 'Inicio'
+    },
+    {
+      id: 2,
+      titulo: 'Proyectos'
+    },
+    {
+      id: 3,
+      titulo: 'Servicios'
+    },
+    {
+      id: 4,
+      titulo: 'Habilidades'
+    },
+    {
+      id: 5,
+      titulo: 'Estudios'
+    },
+    {
+      id: 6,
+      titulo: 'Contacto'
+    }
+  ];
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('activeSeccion ', this.activeSeccion);
+  }
+
+  cambiarSeccion(id): void {
+    this.changeSeccion(id);
   }
 
 }

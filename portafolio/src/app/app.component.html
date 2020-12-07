@@ -1,4 +1,13 @@
-<div class="container-fluid main-container">
-  <app-home></app-home>
-  <app-menu></app-menu>
+<div class="container-fluid container-main">
+  
+  <!-- Secciones -->
+  <app-home *ngIf="activeSeccion == 1"></app-home>
+  <app-proyectos *ngIf="activeSeccion == 2"></app-proyectos>
+  <app-servicios *ngIf="activeSeccion == 3"></app-servicios>
+  <app-habilidades *ngIf="activeSeccion == 4"></app-habilidades>
+  <app-estudios *ngIf="activeSeccion == 5"></app-estudios>
+  <app-contacto *ngIf="activeSeccion == 6"></app-contacto>
+  <!-- Fin Secciones -->
+
+  <app-menu [activeSeccion]="activeSeccion" [changeSeccion]="changeSeccion" ></app-menu>
 </div>
