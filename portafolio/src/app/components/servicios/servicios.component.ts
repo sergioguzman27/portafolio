@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faLaptopCode, faMobileAlt, faCreditCard, faFileCode  } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-servicios',
@@ -6,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servicios.component.scss']
 })
 export class ServiciosComponent implements OnInit {
+
+  faLaptopCode = faLaptopCode;
+  faMobileAlt = faMobileAlt;
+  faCreditCard = faCreditCard;
+  faFileCode = faFileCode;
 
   constructor() { }
 
