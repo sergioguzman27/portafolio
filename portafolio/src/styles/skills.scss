@@ -1,0 +1,16 @@
+@import './colores.scss';
+
+.progress-skill {
+    width: 100%;
+
+    .ant-progress-inner {
+        background-color: transparent;
+        border: 1px solid $azul-claro;
+        border-radius: 0;
+    }
+    .ant-progress-bg {
+        height: 1rem !important;
+        border-radius: 0 !important;
+        background-color: $azul-claro;
+    }
+}

@@ -16,6 +16,8 @@ import es from '@angular/common/locales/es';
 // Components de Antd
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
+
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
@@ -43,6 +45,7 @@ registerLocaleData(es);
     BrowserAnimationsModule,
     NzStepsModule,
     NzTimelineModule,
+    NzProgressModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: es_ES }],
   bootstrap: [AppComponent]

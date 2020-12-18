@@ -29,7 +29,7 @@ export class MenuComponent implements OnInit {
     },
     {
       id: 4,
-      titulo: 'Habilidades'
+      titulo: 'Conocimientos'
     },
     {
       id: 5,
