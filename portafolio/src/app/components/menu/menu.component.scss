@@ -10,8 +10,12 @@
     height: 10vh;
 }
 
+.icono-menu {
+    width: 2rem;
+}
+
 .btn-menu, .btn-menu:hover, .btn-menu:focus {
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
     outline: none;
 
