@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "imagenCover": "../../../assets/proyectos/proyecto1/cover.jpg",
+    "imagen": ".../../../assets/proyectos/proyecto1/portada.jpg",
+    "tiempo": 150,
+    "lenguajes": "Ionic, Angular, Django",
+    "descripcion": "App estudiantil realizada como proyecto final del curso de Ingeniería de Software I."
+  },
+  {
+    "id": 2,
+    "imagenCover": "../../../assets/proyectos/proyecto2/cover.jpg",
+    "imagen": ".../../../assets/proyectos/proyecto2/portada.jpg",
+    "tiempo": 80,
+    "lenguajes": "Wordpress, php, html, css",
+    "descripcion": "Pagina de portafolio para estudiante de arquitectura realizada en wordpress."
+  },
+  {
+    "id": 3,
+    "imagenCover": "../../../assets/proyectos/proyecto3/cover.jpg",
+    "imagen": ".../../../assets/proyectos/proyecto3/portada.jpg",
+    "tiempo": 150,
+    "lenguajes": "Angular, Django",
+    "descripcion": "Sitio web para alquier de inmuebles desplegado en servidores de AWS, este sitio incluye una aplicación web para el control del catalogo de inmuebles que se pueden alquilar."
+  },
+  {
+    "id": 4,
+    "imagenCover": "../../../assets/proyectos/proyecto4/cover.png",
+    "imagen": ".../../../assets/proyectos/proyecto4/portada.jpg",
+    "tiempo": 80,
+    "lenguajes": "Wordpress, php, html, css",
+    "descripcion": "Pagina de portafolio para estudiante de arquitectura realizada en wordpress."
+  }
+]
