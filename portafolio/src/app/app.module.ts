@@ -23,6 +23,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 registerLocaleData(es);
 
@@ -36,6 +37,7 @@ registerLocaleData(es);
     HabilidadesComponent,
     EstudiosComponent,
     ContactoComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule,

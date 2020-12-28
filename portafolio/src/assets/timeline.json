@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "year": 2009,
+    "descripcion": "Educación primaria - Colegio Privado Mixto Rosario"
+  },
+  {
+    "id": 2,
+    "year": 2012,
+    "descripcion": "Educación nivel medio - Colegio Privado Mixto Rosario"
+  },
+  {
+    "id": 3,
+    "year": 2014,
+    "descripcion": "Bachiller en computación - Colegio Privado Mixto Rosario"
+  },
+  {
+    "id": 4,
+    "year": 2020,
+    "descripcion": "Ingeniería en informática y sistemas - Universidad Rafael Landívar"
+  }
+]

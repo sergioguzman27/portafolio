@@ -1,0 +1,19 @@
+@import '../../../styles/colores.scss';
+
+.estudios-seccion {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    // border-left: 2px solid $azul-claro;
+    // border-bottom: 2px solid $azul-claro;
+    padding: 5rem;
+
+    h2 {
+        padding-left: 0.5rem;
+        margin-right: auto;
+        color: $azul-claro;
+        border-bottom: 2px solid $azul-claro;
+        border-left: 2px solid $azul-claro;
+    }
+}

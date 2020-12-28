@@ -1,8 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Observable } from 'rxjs';
 import { Proyecto } from 'src/app/interfaces/interfaces';
-import { ProyectosService } from '../../services/proyectos.service';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -16,10 +15,10 @@ export class ProyectosComponent implements OnInit {
   itemSelect = 0;
   proyectos: Array<Proyecto> = [];
 
-  constructor(private proyectosService: ProyectosService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.proyectosService.getProyectos().subscribe( response => {
+    this.dataService.getProyectos().subscribe( response => {
       this.proyectos = response;
     });
   }

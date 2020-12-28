@@ -6,3 +6,9 @@ export interface Proyecto {
     lenguajes: string;
     descripcion: string;
 }
+
+export interface DotLine {
+    id: number;
+    year: number;
+    descripcion: string;
+}

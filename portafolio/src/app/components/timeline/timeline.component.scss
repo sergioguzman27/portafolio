@@ -1,0 +1,72 @@
+@import '../../../styles/colores.scss';
+
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 0.5rem;
+    background-color: $azul-claro;
+}
+
+.timeline-dot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  3rem;
+    height: 3rem;
+    background-color: $negro;
+    border: 1px solid $azul-claro;
+    border-radius: 50%;
+    color: $blanco;
+    font-size: 16pt;
+}
+
+.timeline-dot-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1.45rem;
+    top: -10rem;
+    width: 15rem;
+    height: 10rem;
+    border-left: 1px solid $azul-claro;
+    padding-left: 1rem;
+
+    .circle {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $azul-claro;
+        -webkit-box-shadow: 0px 0px 15px 3px $azul-claro; 
+        box-shadow: 0px 0px 15px 3px $azul-claro;
+        left: -0.5rem;
+        top: -0.5rem;
+    }
+}
+
+.timeline-dot-info.down {
+    justify-content: flex-end;
+    top: 2.98rem;
+    .circle {
+        top: 9.5rem; // En base al alto del info
+    }
+}
+
+.timeline-dot-info:hover {
+    span {
+        color: $azul-claro !important;
+    }
+}

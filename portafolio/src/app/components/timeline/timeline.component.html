@@ -1,0 +1,12 @@
+<div class="timeline-container">
+    <div class="timeline-bar">
+        <div *ngFor="let dot of dotLines"  class="timeline-dot">
+            <div [class]="getClassInfo(dot)">
+                <div class="circle"></div>
+                <span class="text-sm bold blanco">{{ dot.year }}</span>
+                <span class="text-xs blanco">{{ dot.descripcion }}</span>
+            </div>
+            {{ dot.id }}
+        </div>
+    </div>
+</div>
