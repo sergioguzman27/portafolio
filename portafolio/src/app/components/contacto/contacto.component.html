@@ -1,1 +1,60 @@
-<h1 class="azul">contacto works!</h1>
+<div class="page-container">
+  <div class="contacto-seccion">
+    <h2 style="text-transform: uppercase">Contactame</h2>
+    <div class="d-flex flex-row flex-1">
+      
+      <div class="d-flex flex-1 align-items-center justify-content-center">
+        <form class="contacto-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+          <div class="d-flex flex-row flex-1">
+            <input placeholder="Nombre" class="form-input" name="nombre" ngModel required />
+            <input placeholder="Apellido" class="form-input" name="apellido" ngModel required />
+          </div>
+          <div class="d-flex flex-row flex-1">
+            <input placeholder="Correo" class="form-input" name="correo" ngModel required />
+            <input placeholder="Motivo" class="form-input" name="motivo" ngModel required />
+          </div>
+          <div class="d-flex flex-row flex-1">
+            <textarea rows="12" placeholder="Mensaje" class="form-input" name="mensaje" ngModel required></textarea>
+          </div>
+          <div class="d-flex flex-row mt-3">
+            <button class="contacto-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="d-flex flex-column flex-1 justify-content-center">
+        <div>
+          <span class="text-md borde-bottom blanco mr-5">En que puedo ayudarte</span>
+        </div>
+        <p class="blanco mt-4">
+          Si tienes alguna duda o pregunta, puedes contactarme enviandome un
+          mensaje directamente en el formulario, o puedes contactarme por medio
+          de mis redes sociales, email o what's app.
+        </p>
+        <div class="flex-1 pt-5">
+          <nz-steps class="steps" nzDirection="vertical">
+              <nz-step zStatus="finish" nzTitle="Guatemala" [nzIcon]="dotPin"></nz-step>
+              <nz-step zStatus="finish" nzTitle="+502 54639668" [nzIcon]="dorWhats"></nz-step>
+              <nz-step zStatus="finish" nzTitle="sergiohumberto27@gmail.com" [nzIcon]="dotMail"></nz-step>
+          </nz-steps>
+
+          <ng-template #dotPin>
+              <div class="icon-dot">
+                  <fa-icon class="azul" [icon]="faMapMarkerAlt"></fa-icon>
+              </div>
+          </ng-template>
+          <ng-template #dorWhats>
+              <div class="icon-dot">
+                  <fa-icon class="azul" [icon]="faPhoneAlt"></fa-icon>
+              </div>
+          </ng-template>
+          <ng-template #dotMail>
+              <div class="icon-dot">
+                  <fa-icon class="azul" [icon]="faEnvelope"></fa-icon>
+              </div>
+          </ng-template>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

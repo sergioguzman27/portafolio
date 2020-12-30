@@ -58,3 +58,31 @@ body {
     height: 90vh;
     padding: 1.5rem 5rem 0rem 5rem;
 }
+
+// Swal
+
+.swal2-icon {
+    font-size: 16pt;
+}
+
+.swal2-title {
+    font-size: 30pt !important;
+}
+
+.swal2-confirm {
+    background-color: $azul-claro !important;
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    color: $blanco !important;
+    padding: 0.3rem 3rem !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.swal2-confirm:hover, .swal2-confirm:focus {
+    outline: none !important;
+    border: none !important;
+    background-color: $azul !important;
+    box-shadow: none !important;
+}
