@@ -1,0 +1,75 @@
+@import '../../../styles/colores.scss';
+
+.contacto-seccion {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    padding: 5rem;
+
+    h2 {
+        padding-left: 0.5rem;
+        margin-right: auto;
+        color: $azul-claro;
+        border-bottom: 2px solid $azul-claro;
+        border-left: 2px solid $azul-claro;
+    }
+
+    .borde-bottom {
+        border-bottom: 2px solid $blanco;
+    }
+}
+
+.contacto-form {
+    padding: 0 4rem 0 1.5rem;
+    width: 100%;
+    // height: 100%;
+
+    .form-input {
+        flex: 1;
+        font-family: 'Anonymous Pro';
+        padding: 0.8rem;
+        font-size: 14pt;
+        color: $blanco;
+        background-color: transparent;
+        border: 1px solid $azul-claro;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .form-input:focus {
+        border-color: $azul !important;
+        outline: none;
+    }
+    .contacto-btn {
+        background-color: $azul-claro;
+        font-size: 12pt;
+        font-weight: bold;
+        color: $blanco;
+        padding: 0.3rem 3rem;
+        outline: none;
+        border: none;
+    }
+
+    .contacto-btn:hover, .contacto-btn:focus {
+        background-color: $azul;
+    }
+}
+
+.icon-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  2.5rem;
+    height: 2.5rem;
+    border: 2px solid $azul;
+    border-radius: 50%;
+    
+    img {
+        // border-radius: 50%;
+        width:  2rem;
+        height: 2rem;
+    }
+}
