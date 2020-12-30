@@ -69,3 +69,24 @@
         -webkit-transform: rotate(359deg);
     }
 }
+
+// REsponsivo
+
+@media (max-width: 991px) {
+    .menu-bar {
+        top: 0;
+        bottom: 0;
+        padding: 0;
+        height: 8vh;
+        width: 100%;
+    }
+
+    .menu-bar-slide {
+        display: none;
+    }
+
+    .titulo-menu {
+        margin-left: auto !important;
+        margin-right: 1rem;
+    }
+}

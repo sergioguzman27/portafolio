@@ -7,14 +7,12 @@
     flex: 1;
     height: 90vh;
     padding: 1.5rem 0.2rem 0rem 5rem;
-    // background-color: brown;
 }
 
 .home-portada {
     flex: 1;
     height: 100%;
     background-color: $rosa;
-    // margin-left: 2rem;
 }
 
 .home-portada-container {
@@ -78,6 +76,47 @@
         // border-radius: 50%;
         width:  2rem;
         height: 2rem;
+    }
+}
+
+// Responsivos
+
+@media (max-width: 991px) {
+    .home-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .home-portada {
+        width: 100%;
+    }
+
+    .home-portada-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .home-body {
+        width: 100%;
+        padding: 0;
+        padding-top: 2rem;
+        
+        .home-body-container {
+            width: 100%;
+            padding: 0;
+            border: none;
+            border-top: 1px solid $azul;
+            padding: 2rem 1rem;
+        }
+    }
+
+    .home-datos {
+        height: 35vh;
     }
 }
 

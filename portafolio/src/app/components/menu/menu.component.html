@@ -1,10 +1,10 @@
 <div class="menu-bar">
-    <div class="d-flex flex-row align-items-center">
+    <div class="d-flex flex-row align-items-center w-100">
         <button class="btn-menu">
             <img class="icono-menu" src="../../../assets/iconos/menu.png" />
             <!-- <fa-icon [icon]="faBars"></fa-icon> -->
         </button>
-        <span class="azul text-xl ml-3">Sergio</span>
+        <span class="titulo-menu azul text-xl ml-3">Sergio</span>
     </div>
     <div class="menu-bar-slide">
         <div *ngFor="let seccion of secciones" class="menu-seccion mr-3" (click)="cambiarSeccion(seccion.id)">
