@@ -17,3 +17,12 @@
         border-left: 2px solid $azul-claro;
     }
 }
+
+@media (max-width: 991px) {
+    .estudios-seccion {
+        height: 100% !important;
+        width: 100%;
+        border: none;
+        padding: 5rem 0 4rem 0rem !important;
+    }
+}
