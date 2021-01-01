@@ -1,19 +1,19 @@
 <div class="page-container">
   <div class="contacto-seccion">
-    <h2 style="text-transform: uppercase">Contactame</h2>
-    <div class="d-flex flex-row flex-1">
+    <h2 style="text-transform: uppercase" class="ml-4 ml-lg-0">Contactame</h2>
+    <div class="d-flex flex-column-reverse flex-lg-row flex-1">
       
       <div class="d-flex flex-1 align-items-center justify-content-center">
         <form class="contacto-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-          <div class="d-flex flex-row flex-1">
+          <div class="d-flex flex-column flex-lg-row flex-1">
             <input placeholder="Nombre" class="form-input" name="nombre" ngModel required />
             <input placeholder="Apellido" class="form-input" name="apellido" ngModel required />
           </div>
-          <div class="d-flex flex-row flex-1">
+          <div class="d-flex flex-column flex-lg-row flex-1">
             <input placeholder="Correo" class="form-input" name="correo" ngModel required />
             <input placeholder="Motivo" class="form-input" name="motivo" ngModel required />
           </div>
-          <div class="d-flex flex-row flex-1">
+          <div class="d-flex flex-column flex-lg-row flex-1">
             <textarea rows="12" placeholder="Mensaje" class="form-input" name="mensaje" ngModel required></textarea>
           </div>
           <div class="d-flex flex-row mt-3">
@@ -22,16 +22,16 @@
         </form>
       </div>
       
-      <div class="d-flex flex-column flex-1 justify-content-center">
-        <div>
-          <span class="text-md borde-bottom blanco mr-5">En que puedo ayudarte</span>
+      <div class="d-flex flex-column flex-1 justify-content-center px-4 px-lg-0">
+        <div class="mt-2 mt-lg-0">
+          <span class="contacto-subtitulo text-md borde-bottom blanco mr-0 mr-lg-5">En que puedo ayudarte</span>
         </div>
         <p class="blanco mt-4">
           Si tienes alguna duda o pregunta, puedes contactarme enviandome un
           mensaje directamente en el formulario, o puedes contactarme por medio
           de mis redes sociales, email o what's app.
         </p>
-        <div class="flex-1 pt-5">
+        <div class="contacto-datos flex-1 pt-5">
           <nz-steps class="steps" nzDirection="vertical">
               <nz-step zStatus="finish" nzTitle="Guatemala" [nzIcon]="dotPin"></nz-step>
               <nz-step zStatus="finish" nzTitle="+502 54639668" [nzIcon]="dorWhats"></nz-step>
@@ -53,7 +53,7 @@
                   <fa-icon class="azul" [icon]="faEnvelope"></fa-icon>
               </div>
           </ng-template>
-      </div>
+        </div>
       </div>
     </div>
   </div>
