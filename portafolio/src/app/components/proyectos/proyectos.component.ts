@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight  } from '@fortawesome/free-solid-svg-icons';
 import { Proyecto } from 'src/app/interfaces/interfaces';
 import { DataService } from '../../services/data.service';
 
@@ -12,6 +13,8 @@ export class ProyectosComponent implements OnInit {
 
   faChevronUp = faChevronUp;
   faChevronDown = faChevronDown;
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   itemSelect = 0;
   proyectos: Array<Proyecto> = [];
 

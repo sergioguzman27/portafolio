@@ -9,7 +9,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'portafolio';
   faCoffee = faCoffee;
-  activeSeccion = 3;
+  activeSeccion = 2;
   
   changeSeccion = (id) => {
     this.activeSeccion = id;
