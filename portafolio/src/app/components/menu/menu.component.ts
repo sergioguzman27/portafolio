@@ -11,6 +11,7 @@ import { faBars  } from '@fortawesome/free-solid-svg-icons';
 export class MenuComponent implements OnInit {
 
   faBars = faBars;
+  menu: boolean = false;
   @Input() changeSeccion: Function;
   @Input() activeSeccion;
 
@@ -49,6 +50,10 @@ export class MenuComponent implements OnInit {
 
   cambiarSeccion(id): void {
     this.changeSeccion(id);
+  }
+
+  toogleMenu() {
+    this.menu = !this.menu;
   }
 
 }

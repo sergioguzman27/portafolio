@@ -1,6 +1,6 @@
 <div class="menu-bar">
     <div class="d-flex flex-row align-items-center w-100">
-        <button class="btn-menu">
+        <button (click)="toogleMenu()" class="btn-menu">
             <img class="icono-menu" src="../../../assets/iconos/menu.png" />
             <!-- <fa-icon [icon]="faBars"></fa-icon> -->
         </button>
@@ -13,5 +13,12 @@
             <span *ngIf="activeSeccion == seccion.id" class="text-xs azul ml-2">{{seccion.titulo}}</span>
             <span *ngIf="activeSeccion != seccion.id" class="menu-titulo text-xs azul ml-2">{{seccion.titulo}}</span>
         </div>
+    </div>
+    <div [class]=" menu ? 'menu' : 'menu inactivo'" (click)="toogleMenu()">
+        <ul class="menu-list">
+            <li *ngFor="let seccion of secciones" [class]=" activeSeccion == seccion.id ? 'menu-link activo' : 'menu-link '">
+                <a (click)="cambiarSeccion(seccion.id)" >{{seccion.titulo}}</a>
+            </li>
+        </ul>
     </div>
 </div>

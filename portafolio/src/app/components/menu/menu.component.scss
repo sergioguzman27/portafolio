@@ -1,5 +1,48 @@
 @import '../../../styles/colores.scss';
 
+.menu.inactivo {
+    left: -200% !important;
+    transition: left 0.6s ease 0s;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $azul;
+    opacity: 80%;
+    top: 0;
+    left: 0;
+    z-index: 8000;
+    transition: left 0.6s ease 0s;
+
+    .menu-list {
+        list-style: none;
+        margin-left: 5rem;
+    }
+
+    .menu-link {
+        font-size: 40pt;
+        font-weight: bold;
+        color: $blanco;
+        margin: 1.5rem 0;
+        
+        a {
+            padding: 0.8rem;
+            border-bottom: 2px solid transparent;
+            border-left:   2px solid transparent;
+        }
+    }
+
+    .menu-link.activo a, .menu-link:hover a {
+        border-bottom-color: $blanco;
+        border-left-color: $blanco;
+    }
+}
+
 .menu-bar {
     display: flex;
     position: absolute;
@@ -88,5 +131,13 @@
     .titulo-menu {
         margin-left: auto !important;
         margin-right: 1rem;
+    }
+
+    .menu-list {
+        margin-left: 0rem !important;
+    }
+
+    .menu-link {
+        font-size: 28pt !important;
     }
 }
