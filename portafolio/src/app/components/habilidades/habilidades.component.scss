@@ -63,3 +63,33 @@
     }
 
 }
+
+@media (max-width: 991px) {
+    .habilidades-seccion1 {
+        height: 100%;
+        width: 100%;
+        border: none !important;
+        padding: 5rem 0 0rem 0rem !important;
+    }
+
+    .habilidades-seccion2 {
+        height: 100%;
+        width: 100%;
+        border: none !important;
+        padding: 0.5rem 0 1rem 0rem !important;
+    }
+
+    .servicios-seccion2 {
+        border: none;
+        width: 100%;
+        padding: 0 !important
+    }
+
+    .servicios-responsivo {
+        flex-direction: column !important;
+    }
+    .card-servicio {
+        padding-top: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
+}

@@ -52,3 +52,25 @@ p {
 .bold {
     font-weight: bold;
 }
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 40pt !important;
+    }
+    
+    h2 {
+        font-size: 30pt !important;
+    }
+    
+    h3 {
+        font-size: 25pt !important;
+    }
+    
+    h4 {
+        font-size: 20pt !important;
+    }
+    
+    h5 {
+        font-size: 18pt !important;
+    }
+}

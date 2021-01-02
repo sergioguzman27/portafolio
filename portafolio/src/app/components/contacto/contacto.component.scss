@@ -73,3 +73,24 @@
         height: 2rem;
     }
 }
+
+@media (max-width: 991px) {
+    .contacto-seccion {
+        height: 100%;
+        width: 100%;
+        border: none;
+        padding: 5rem 0 0rem 0rem !important;
+    }
+
+    .contacto-subtitulo {
+        display: flex;
+    }
+
+    .contacto-datos {
+        height: 35vh;
+    }
+
+    .contacto-form {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+}
