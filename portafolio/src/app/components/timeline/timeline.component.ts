@@ -16,7 +16,7 @@ export class TimelineComponent implements OnInit {
   }
 
   getClassInfo(dot: DotLine) {
-    return `timeline-dot-info ${dot.id % 2 == 0 ? 'down' : ''}`;
+    return `timeline-dot-info animate__animated animate__fadeInUp animate__delay-1s ${dot.id % 2 == 0 ? 'down' : ''}`;
   }
 
 }

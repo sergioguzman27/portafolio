@@ -99,11 +99,11 @@
     border-right: 2px solid transparent;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 2s steps(36) 1s 1 normal both,
+    animation: typewriter-contacto 2s steps(36) 1s 1 normal both,
     blinkTextCursor 500ms steps(36) 14 normal;
 }
   
-@keyframes typewriter {
+@keyframes typewriter-contacto {
     from {
       width: 0;
     }
