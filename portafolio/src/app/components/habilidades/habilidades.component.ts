@@ -28,6 +28,6 @@ export class HabilidadesComponent implements OnInit {
       this.ionic = 50;
       this.react = 75;
       this.django = 80;
-    }, 1500);
+    }, 1000);
   }
 }

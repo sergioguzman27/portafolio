@@ -120,6 +120,22 @@
     }
 }
 
+.nombre-animado1 {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter1 1.5s steps(36) 1s 1 normal both,
+    blinkTextCursor 500ms steps(36) 14 normal;
+}
+
+.nombre-animado2 {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter1 1.5s steps(36) 2.5s 1 normal both,
+    blinkTextCursor 500ms steps(36) 14 normal;
+}
+
 .titulo-animado {
     border-right: 2px solid transparent;
     white-space: nowrap;
@@ -142,6 +158,15 @@
     }
     to {
         width: 9em;
+    }
+}
+
+@keyframes typewriter1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 3.3em;
     }
 }
 
