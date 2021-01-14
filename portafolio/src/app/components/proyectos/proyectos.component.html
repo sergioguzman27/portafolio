@@ -24,7 +24,7 @@
                     <img *ngIf="itemSelect == 0" [src]="proyectos[proyectos.length - 1].imagenCover" />
                     <!-- <img *ngIf="itemSelect == array.length -1" src="../../../assets/proyectos/fondo.png" /> -->
                 </div>
-                <div class="carousel-item-seleccionado">
+                <div class="carousel-item-seleccionado animate__animated animate__slideInDown">
                     <img [src]="proyectos[itemSelect].imagenCover" />
                 </div>
                 <div class="carousel-item-oculto">
@@ -36,7 +36,7 @@
     </div>
     <div class="info-proyectos">
         <div *ngIf="proyectos.length > 0" class="d-flex flex-1 justify-content-center align-items-center">
-            <img style="width: 100%;" [src]="proyectos[itemSelect].imagen" />
+            <img [class]="contenidoClass" style="width: 100%;" [src]="proyectos[itemSelect].imagen" />
         </div>
         <div *ngIf="proyectos.length > 0" class="d-flex flex-column flex-lg-row flex-1 align-items-lg-center">
             <div class="d-flex flex-column pr-lg-4 borde-right mt-3 mt-lg-0">

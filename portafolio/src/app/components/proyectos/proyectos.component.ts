@@ -16,6 +16,7 @@ export class ProyectosComponent implements OnInit {
   faChevronLeft = faChevronLeft;
   faChevronRight = faChevronRight;
   itemSelect = 0;
+  contenidoClass = 'contenido-normal'
   proyectos: Array<Proyecto> = [];
 
   constructor(private dataService: DataService) { }
@@ -27,14 +28,25 @@ export class ProyectosComponent implements OnInit {
   }
 
   movePrevius() {
-    if (this.itemSelect - 1 < 0) {
-      this.itemSelect = this.proyectos.length - 1;
-    } else {
-      this.itemSelect -= 1;
-    }
+    this.contenidoClass = 'transicion-inicio';
+    setTimeout(() => {
+      this.contenidoClass = 'transicion-fin';
+      if (this.itemSelect - 1 < 0) {
+        this.itemSelect = this.proyectos.length - 1;
+      } else {
+        this.itemSelect -= 1;
+      }
+    }, 1000);
+    setTimeout(() => {
+      this.contenidoClass = '';
+    }, 1500)
   }
 
   moveNext() {
+    this.contenidoClass = 'transicion';
+    setTimeout(() => {
+      this.contenidoClass = '';
+    }, 3000)
     if (this.itemSelect + 1 == this.proyectos.length) {
       this.itemSelect = 0;
     } else {

@@ -156,12 +156,30 @@
   }
 }
 
+.transicion-inicio {
+  animation: transparencia-inicio 1s;
+}
+
+.transicion-fin {
+  animation: transparencia-fin 1s;
+}
+
 .titulo-animado {
   border-right: 2px solid transparent;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter-proyectos 2s steps(36) 1s 1 normal both,
     blinkTextCursor 500ms steps(36) 14 normal;
+}
+
+@keyframes transparencia-inicio {
+  0%   {filter: blur(0px); opacity: 1;}
+  100% {filter: blur(0px); opacity: 0;}
+}
+
+@keyframes transparencia-fin {
+  0%   {filter: blur(0px); opacity: 0;}
+  100% {filter: blur(0px); opacity: 1;}
 }
 
 @keyframes typewriter-proyectos {
