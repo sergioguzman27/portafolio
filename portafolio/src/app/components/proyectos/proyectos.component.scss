@@ -44,9 +44,7 @@
     display: none;
   }
 
-  .btn-carousel,
-  .btn-carousel:hover,
-  .btn-carousel:focus {
+  .btn-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +57,16 @@
       color: $azul;
     }
   }
+
+  .btn-carousel:hover,
+  .btn-carousel:focus {
+    border-color: $azul;
+    .ng-fa-icon {
+      color: $azul !important;
+    }
+  }
+
+
 
   .carousel-items {
     display: flex;
@@ -156,12 +164,16 @@
   }
 }
 
+.transicion {
+  animation: transparencia 3.5s ease-in; 
+}
+
 .transicion-inicio {
-  animation: transparencia-inicio 1s;
+  animation: transparencia-inicio 1s ease-in;
 }
 
 .transicion-fin {
-  animation: transparencia-fin 1s;
+  animation: transparencia-fin 1s ease-out;
 }
 
 .titulo-animado {
@@ -170,6 +182,11 @@
   overflow: hidden;
   animation: typewriter-proyectos 2s steps(36) 1s 1 normal both,
     blinkTextCursor 500ms steps(36) 14 normal;
+}
+
+@keyframes transparencia {
+  0%   {filter: blur(0px); opacity: 0;}
+  100% {filter: blur(0px); opacity: 1;}
 }
 
 @keyframes transparencia-inicio {
