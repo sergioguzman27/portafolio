@@ -12,5 +12,6 @@
         height: 1rem !important;
         border-radius: 0 !important;
         background-color: $azul-claro;
+        transition: all 5s cubic-bezier(.08,.82,.17,1) 0s;
     }
 }

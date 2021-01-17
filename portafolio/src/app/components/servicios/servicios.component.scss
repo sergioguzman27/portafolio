@@ -118,3 +118,29 @@
         padding-bottom: 0.5rem;
     }
 }
+
+.titulo-animado {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter-servicios 2s steps(36) 1s 1 normal both,
+    blinkTextCursor 500ms steps(36) 14 normal;
+}
+  
+@keyframes typewriter-servicios {
+    from {
+      width: 0;
+    }
+    to {
+      width: 5.5em;
+    }
+}
+  
+@keyframes blinkTextCursor {
+    from {
+        border-right: transparent;
+    }
+    to {
+        border-right-color: $blanco;
+    }
+}

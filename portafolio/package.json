@@ -24,6 +24,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@ngu/carousel": "^3.0.2",
     "@popperjs/core": "^2.5.4",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "ng-zorro-antd": "^10.2.0",

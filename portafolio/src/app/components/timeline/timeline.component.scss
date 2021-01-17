@@ -125,3 +125,30 @@
         font-size: 10pt !important;
     }
 }
+
+
+.texto-animado {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter1 1s steps(36) 3s 1 normal both,
+    blinkTextCursor 500ms steps(36) 10 normal;
+}
+  
+@keyframes typewriter1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2.5em;
+    }
+}
+  
+@keyframes blinkTextCursor {
+    from {
+        border-right: transparent;
+    }
+    to {
+        border-right-color: $blanco;
+    }
+}

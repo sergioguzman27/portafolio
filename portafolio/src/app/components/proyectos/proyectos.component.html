@@ -1,7 +1,7 @@
 <div class="page-container">
     <div class="carousel-proyectos">
-        <h2 style="text-transform: uppercase;" class="ml-4 ml-lg-0">Proyectos</h2>
-        <div *ngIf="proyectos.length > 0" class="carousel-container">
+        <h2 style="text-transform: uppercase;" class="titulo-animado ml-4 ml-lg-0">Proyectos</h2>
+        <div *ngIf="proyectos.length > 0" class="transicion carousel-container">
             <div class="carousel-controls">
                 <button class="btn-carousel mb-3" (click)="movePrevius()">
                     <fa-icon class="azul-claro" [icon]="faChevronUp"></fa-icon>
@@ -36,9 +36,9 @@
     </div>
     <div class="info-proyectos">
         <div *ngIf="proyectos.length > 0" class="d-flex flex-1 justify-content-center align-items-center">
-            <img style="width: 100%;" [src]="proyectos[itemSelect].imagen" />
+            <img [class]="contenidoClass" style="width: 100%;" [src]="proyectos[itemSelect].imagen" />
         </div>
-        <div *ngIf="proyectos.length > 0" class="d-flex flex-column flex-lg-row flex-1 align-items-lg-center">
+        <div *ngIf="proyectos.length > 0" [class]="contenidoClass2" class="d-flex flex-column flex-lg-row flex-1 align-items-lg-center">
             <div class="d-flex flex-column pr-lg-4 borde-right mt-3 mt-lg-0">
                 <span style="text-transform: uppercase;" class="azul-claro bold">Tiempo trabajado</span>
                 <span class="azul-claro">{{ proyectos[itemSelect].tiempo }} horas</span>
@@ -48,7 +48,7 @@
                 <span class="azul-claro">{{ proyectos[itemSelect].lenguajes }}</span>
             </div>
         </div>
-        <div *ngIf="proyectos.length > 0" class="d-flex flex-1 align-items-start mt-3 mt-lg-0">
+        <div *ngIf="proyectos.length > 0" [class]="contenidoClass2" class="transicion-ejemplo d-flex flex-1 align-items-start mt-3 mt-lg-0">
             <p class="blanco">{{ proyectos[itemSelect].descripcion }}</p>
         </div>
     </div>

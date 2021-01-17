@@ -16,6 +16,8 @@ export class ProyectosComponent implements OnInit {
   faChevronLeft = faChevronLeft;
   faChevronRight = faChevronRight;
   itemSelect = 0;
+  contenidoClass = 'transicion';
+  contenidoClass2 = 'transicion';
   proyectos: Array<Proyecto> = [];
 
   constructor(private dataService: DataService) { }
@@ -27,18 +29,63 @@ export class ProyectosComponent implements OnInit {
   }
 
   movePrevius() {
-    if (this.itemSelect - 1 < 0) {
-      this.itemSelect = this.proyectos.length - 1;
-    } else {
-      this.itemSelect -= 1;
-    }
+    this.contenidoClass = 'transicion-inicio';
+    this.contenidoClass2 = 'transicion-inicio';
+    setTimeout(() => {
+      this.contenidoClass = 'transicion-fin';
+      this.contenidoClass2 = 'transicion-fin';
+      if (this.itemSelect - 1 < 0) {
+        this.itemSelect = this.proyectos.length - 1;
+      } else {
+        this.itemSelect -= 1;
+      }
+
+      setTimeout(() => {
+        this.contenidoClass = '';
+        this.contenidoClass2 = '';
+      }, 1000)
+    }, 1000);
   }
 
+  // movePrevius() {
+  //   if (this.itemSelect - 1 < 0) {
+  //     this.itemSelect = this.proyectos.length - 1;
+  //   } else {
+  //     this.itemSelect -= 1;
+  //   }
+  // }
+
+  // moveNext() {
+  //   this.contenidoClass = 'transicion-inicio';
+  //   setTimeout(() => {
+  //     this.contenidoClass = 'transicion-fin';
+  //     if (this.itemSelect + 1 == this.proyectos.length) {
+  //       this.itemSelect = 0;
+  //     } else {
+  //       this.itemSelect += 1;
+  //     }
+  //   }, 1000);
+  //   setTimeout(() => {
+  //     this.contenidoClass = '';
+  //   }, 1500)
+  // }
+
   moveNext() {
-    if (this.itemSelect + 1 == this.proyectos.length) {
-      this.itemSelect = 0;
-    } else {
-      this.itemSelect += 1;
-    }
+    this.contenidoClass = 'transicion-inicio';
+    this.contenidoClass2 = 'transicion-inicio';
+    setTimeout(() => {
+      this.contenidoClass = 'transicion-fin';
+      this.contenidoClass2 = 'transicion-fin';
+      if (this.itemSelect + 1 == this.proyectos.length) {
+        this.itemSelect = 0;
+      } else {
+        this.itemSelect += 1;
+      }
+
+      setTimeout(() => {
+        this.contenidoClass = '';
+        this.contenidoClass2 = '';
+      }, 1000)
+    }, 1000);
   }
 }

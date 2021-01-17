@@ -26,3 +26,29 @@
         padding: 5rem 0 4rem 0rem !important;
     }
 }
+
+.titulo-animado {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter-estudios 2s steps(36) 1s 1 normal both,
+    blinkTextCursor 500ms steps(36) 14 normal;
+}
+  
+@keyframes typewriter-estudios {
+    from {
+      width: 0;
+    }
+    to {
+      width: 4.7em;
+    }
+}
+  
+@keyframes blinkTextCursor {
+    from {
+        border-right: transparent;
+    }
+    to {
+        border-right-color: $blanco;
+    }
+}
