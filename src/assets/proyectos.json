@@ -5,7 +5,8 @@
     "imagen": ".../../../assets/proyectos/proyecto1/portada.png",
     "tiempo": 150,
     "lenguajes": "Ionic, Angular, Django",
-    "descripcion": "App estudiantil realizada como proyecto final del curso de Ingeniería de Software I. La app movil está hecha en Ionic conectandose a una api rest realizada con Django y Rest Framework. La idea de esta app es el manejo y control de cursos entre estudiantes, con la posibilidad de llevar control de horarios de clases, eventos y publicaciones."
+    "titulo": "App móvil para gestión de cursos",
+    "descripcion": "App estudiantil realizada como proyecto final del curso de Ingeniería de Software I. La app móvil está hecha en Ionic conectándose a una api rest realizada con Django y Rest Framework. La idea de esta app es el manejo y control de cursos entre estudiantes, con la posibilidad de llevar control de horarios de clases, eventos y publicaciones."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "imagen": ".../../../assets/proyectos/proyecto2/portada.png",
     "tiempo": 80,
     "lenguajes": "Angular, Boostrap, Django, Docker",
-    "descripcion": "Sitio web para alquier de inmuebles desplegado en servidores de AWS utilizando Docker, el frontend está realizado con Angular y Bootstrap conectandose a una api rest realizada en Django y Rest Framework, este sitio incluye una aplicación administrativa para el control del catalogo de inmuebles que se pueden alquilar y una frontpage de cara al usuario donde se muestra información de la empresa, los diferentes inmuebles con fotos, detalles e información sobre ellos."
+    "titulo": "Sitio web para Rentadora General Quetgo",
+    "descripcion": "Sitio web para alquiler de inmuebles desplegado en servidores de AWS utilizando Docker, el frontend está realizado con Angular y Bootstrap conectándose a una api rest realizada en Django y Rest Framework, este sitio incluye una aplicación administrativa para el control del catálogo de inmuebles que se pueden alquilar y una frontpage de cara al usuario donde se muestra información de la empresa, los diferentes inmuebles con fotos, detalles e información sobre ellos."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "imagen": ".../../../assets/proyectos/proyecto3/portada.png",
     "tiempo": 150,
     "lenguajes": "Ionic, Angular, Django, Arduino",
-    "descripcion": "App móvil para el control de una casa domótica. Esta app lleva el control de diferentes sensores y luces de una maqueta de una casa domotica, conectandose a una api rest realizada con Django y Rest Framework. Incluye sensores para abrir puertas, control color de luces, encendido y apagado de luces, ventiladores, registro de ingresos a la casa, entre otros."
+    "titulo": "App móvil para control de casa domótica",
+    "descripcion": "App móvil para el control de una casa domótica. Esta app lleva el control de diferentes sensores y luces de una maqueta de una casa domótica, conectándose a una api rest realizada con Django y Rest Framework. Incluye sensores para abrir puertas, control color de luces, encendido y apagado de luces, ventiladores, registro de ingresos a la casa, entre otros."
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "imagen": ".../../../assets/proyectos/proyecto4/portada.png",
     "tiempo": 120,
     "lenguajes": "Django, html, css",
-    "descripcion": "App web para el control de una veterinaria. Utilizando django para el backend y para el frontend con sus sitema de templates, esta aplicación lleva el control de clientes y sus mascotas, control de carnets para mascotas, control de inventario, servicos disponibles, venta de servicios y control de planillas."
+    "titulo": "Sistema de gestión para veterinaría",
+    "descripcion": "App web para el control de una veterinaria. Utilizando django para el backend y para el frontend con sus sistema de templates, esta aplicación lleva el control de clientes y sus mascotas, control de carnets para mascotas, control de inventario, servicios disponibles, venta de servicios y control de planillas."
   }
 ]
