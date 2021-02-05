@@ -56,4 +56,8 @@ export class MenuComponent implements OnInit {
     this.menu = !this.menu;
   }
 
+  getTag(seccion: any) {
+    return `#${seccion.titulo}`
+  }
+
 }

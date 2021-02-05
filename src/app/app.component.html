@@ -1,22 +1,11 @@
 <div class="container-fluid container-main">
-  
-  <!-- Secciones -->
-  <app-home *ngIf="activeSeccion == 1"></app-home>
-  <app-proyectos *ngIf="activeSeccion == 2"></app-proyectos>
-  <app-servicios *ngIf="activeSeccion == 3"></app-servicios>
-  <app-habilidades *ngIf="activeSeccion == 4"></app-habilidades>
-  <app-estudios *ngIf="activeSeccion == 5"></app-estudios>
-  <app-contacto *ngIf="activeSeccion == 6"></app-contacto>
-  
-  <!-- <app-home *ngIf="activeSeccion <= 1"></app-home>
-  <app-proyectos *ngIf="activeSeccion <= 2"></app-proyectos>
-  <app-servicios *ngIf="activeSeccion <= 3"></app-servicios>
-  <app-habilidades *ngIf="activeSeccion <= 4"></app-habilidades>
-  <app-estudios *ngIf="activeSeccion <= 5"></app-estudios>
-  <app-contacto *ngIf="activeSeccion <= 6"></app-contacto> -->
-  <!-- Fin Secciones -->
-
-  <!-- 037382D6205CC5E79B87202143F25A003341 -->
-
+  <div class="body-container">
+    <app-home></app-home>
+    <app-proyectos></app-proyectos>
+    <app-servicios></app-servicios>
+    <app-habilidades></app-habilidades>
+    <app-estudios></app-estudios>
+    <app-contacto></app-contacto>
+  </div>
   <app-menu [activeSeccion]="activeSeccion" [changeSeccion]="changeSeccion" ></app-menu>
 </div>
