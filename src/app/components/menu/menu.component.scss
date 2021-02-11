@@ -31,6 +31,7 @@
         margin: 1.5rem 0;
         
         a {
+            color: $blanco !important;
             padding: 0.8rem;
             border-bottom: 2px solid transparent;
             border-left:   2px solid transparent;
@@ -113,6 +114,14 @@
     }
 }
 
+.link-desktop {
+    text-decoration: none;
+}
+
+.link-movil {
+    display: none;
+}
+
 // REsponsivo
 
 @media (max-width: 991px) {
@@ -122,6 +131,16 @@
         padding: 0;
         height: 8vh;
         width: 100%;
+        position: fixed;
+        z-index: 99;
+        padding: 0px 15px;
+    }
+
+    .menu-bar-content {
+        background-color: rgba(255,255,255,0.8) !important;
+        z-index: 99;
+        padding: 5px 0 !important;
+        border-radius: 3px;
     }
 
     .menu-bar-slide {
@@ -143,5 +162,13 @@
 
     .text-xl {
         font-size: 18pt !important;
+    }
+
+    // .link-desktop {
+    //     display: none;
+    // }
+    
+    .link-movil {
+        display: inline;
     }
 }

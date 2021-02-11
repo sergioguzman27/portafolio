@@ -1,22 +1,24 @@
 <div class="menu-bar">
-    <div class="d-flex flex-row align-items-center w-100 px-4 px-lg-0">
+    <div class="menu-bar-content d-flex flex-row align-items-center w-100 px-4 px-lg-0">
         <button (click)="toogleMenu()" class="btn-menu">
             <img class="icono-menu" src="../../../assets/iconos/menu.png" />
         </button>
         <span class="titulo-menu azul bold text-xl ml-3">Sergio</span>
     </div>
-    <div class="menu-bar-slide">
+    <!-- <div class="menu-bar-slide">
         <div *ngFor="let seccion of secciones" class="menu-seccion mr-3" (click)="cambiarSeccion(seccion.id)">
             <div *ngIf="activeSeccion == seccion.id" class="menu-seccion-dot bg-azul"></div>
             <div *ngIf="activeSeccion != seccion.id" class="menu-seccion-dot"></div>
             <span *ngIf="activeSeccion == seccion.id" class="text-xs azul ml-2">{{seccion.titulo}}</span>
             <span *ngIf="activeSeccion != seccion.id" class="menu-titulo text-xs azul ml-2">{{seccion.titulo}}</span>
         </div>
-    </div>
+    </div> -->
     <div [class]=" menu ? 'menu' : 'menu inactivo'" (click)="toogleMenu()">
         <ul class="menu-list">
-            <li *ngFor="let seccion of secciones" [class]=" activeSeccion == seccion.id ? 'menu-link activo' : 'menu-link '">
-                <a (click)="cambiarSeccion(seccion.id)" >{{seccion.titulo}}</a>
+            <li *ngFor="let seccion of secciones" [class]=" activeSeccion == seccion.id ? 'menu-link' : 'menu-link '">
+                <a class="link-desktop" [href]="getTag(seccion)">{{seccion.titulo}}</a>
+                <!-- <a class="link-desktop" [href]="getTag(seccion)" (click)="cambiarSeccion(seccion.id)" >{{seccion.titulo}}</a> -->
+                <!-- <a class="link-movil" [href]="getTag(seccion)">{{seccion.titulo}}</a> -->
             </li>
         </ul>
     </div>

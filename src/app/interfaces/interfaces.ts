@@ -4,6 +4,7 @@ export interface Proyecto {
     imagen: string;
     tiempo: number;
     lenguajes: string;
+    titulo: string;
     descripcion: string;
 }
 

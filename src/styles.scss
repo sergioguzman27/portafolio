@@ -16,6 +16,11 @@ body {
     background-color: $negro !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 .container-main {
     width: auto !important;
     overflow-y: hidden !important;
@@ -58,6 +63,7 @@ body {
     flex: 1;
     height: 90vh;
     padding: 1.5rem 5rem 0rem 5rem;
+    width: 100vw;
 }
 
 // Swal
