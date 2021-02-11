@@ -114,6 +114,10 @@
     }
 }
 
+.link-desktop {
+    text-decoration: none;
+}
+
 .link-movil {
     display: none;
 }
@@ -160,9 +164,9 @@
         font-size: 18pt !important;
     }
 
-    .link-desktop {
-        display: none;
-    }
+    // .link-desktop {
+    //     display: none;
+    // }
     
     .link-movil {
         display: inline;
